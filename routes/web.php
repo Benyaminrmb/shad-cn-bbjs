@@ -6,7 +6,9 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', static function () {
-    return Inertia::render('Landing');
+    return Inertia::render('Landing',[
+        'message'=>'message is here'
+    ]);
 })->name('home');
 Route::get('/about', static function () {
     return Inertia::render('About');

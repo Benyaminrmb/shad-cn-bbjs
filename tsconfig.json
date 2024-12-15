@@ -8,11 +8,15 @@
         "isolatedModules": true,
         "target": "ESNext",
         "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
+        "forceConsistentCasingInFileNames": false,
         "skipLibCheck": true,
         "noEmit": true,
         "paths": {
-            "@/*": ["./resources/js/*"],
+            "@/*": [
+                "./resources/js/*"
+            ],
+            "@/Components/*": ["./resources/js/Components/*"],
+            "@/components/*": ["./resources/js/components/*"],
             "ziggy-js": ["./vendor/tightenco/ziggy"]
         }
     },
